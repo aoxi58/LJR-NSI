@@ -1,0 +1,33 @@
+body{
+	background-color:#F8E0E6
+	}
+
+legend{
+	color :#A901DB; 
+	font-style :italic
+	}
+
+fieldset{
+	width : 1000px;  
+	border: 1px solid #74D0F1; 
+	background-color :#81DAF5;  
+	margin :auto
+	}
+
+h1{
+	text-align : center; 
+	color :#8A0886;
+	}
+
+div{
+	position : relative; 
+	float :left;
+	margin-left :10px
+	}
+
+img{
+	height:250px; 
+	width:300px; 
+	position : relative; 
+	float :left;
+	margin-left : 10px}

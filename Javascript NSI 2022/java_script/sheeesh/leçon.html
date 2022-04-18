@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Mes débuts en Javascript</title>
+		<link rel="stylesheet" href="leçon.css" />
+	
+	</head>
+	<body>
+		
+		<h1>Mes premiers scripts avec Javascript</h1>
+		<BR>
+		<p id ="monPara">Voici une page js</p>
+		<p id="paragraphe2">Cette ligne sera t-elle modifiée ?</p>
+		<div onmouseover="foncEntre()" onmouseout="foncQuitte()" id="maDiv"><p>Survolez moi</p></div>
+		<button onclick="FoncRouge()">Rouge</button>
+		<button onclick="FoncVert()">Vert</button>
+		
+		<script>
+		document.write("affichage de la date et de l'heure")
+		
+		d= new Date();
+		document.write(d.toLocaleDateString()+' ---- '+d.toLocaleDateString());
+		</script>
+
+		<script src = "leçon.js"></script>
+	</body> 
+</html>

@@ -1,0 +1,41 @@
+
+<!doctype html>
+
+<html lang="fr">
+	<head>
+		<title>Formulaire avec case à cocher</title>
+		<meta charset="utf-8">
+		<meta name = "author" content = "M_TAIEB"/>
+		<link rel = "stylesheet" href="mon_style.css">
+	</head>
+	
+	<body>
+	<h1> Calculateur de taux marginal d'imposition </h1>
+		<form>
+		<fieldset>
+		<legend > Calculer votre taux marginal d'impots sur le revenu </legend>
+		<img src=Image_impot.jpeg >
+			<div>
+			<p><label for="revenu" > Entrer le revenu imposable de votre foyer : </label>
+			<input type="text" name="revenu" id="revenu"/><br/></p>
+            <p>Etes vous en couple ?<br/>
+            <label for="Oui"> Oui </label>
+			<input type="checkbox" name="Oui" id="Oui" value="1" />
+            <label for="Non"> Non </label>
+			<input type="checkbox" name="Non" id="Non" value="0" />
+			 
+			<p><label for="enf" > Combien avez-vous d'enfant ? </label>
+			<input type="text" name="enf" id="enf"/><br/></p>
+            </p>
+			<p><input type="button" value="Cliquer pour connaitre votre taux marginal d'imposition" onclick="Calcul_impot(form)" /> 
+			</p>
+			<p id="reponse"></p>
+			</div>
+		</fieldset>      
+		</form>
+	
+	<script src="script.js"></script>
+		
+	</body>
+			
+</html>

@@ -1,0 +1,12 @@
+h1{
+	text-align: center;
+}
+.rouge{
+	color::red;
+	font-size:20px;
+}
+.vert{
+	color:green;
+	font-size:30px;
+}
+

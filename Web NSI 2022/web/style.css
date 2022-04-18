@@ -1,0 +1,21 @@
+h1{color : red    ;
+	border :  5px solid black;
+	text-align :center    ;
+	font-family : arial  ;
+	font-size : 50px     ;}
+	
+body{background-color: #599BE0;}
+
+p.strophe1{color : #243547 ;margin-left : 400px}
+
+p.strophe2{color : #046AE0 ;margin-left : 400px}
+
+p.strophe3{color : white ;margin-left : 400px}
+
+p.strophe4{color : white ;margin-left : 400px}
+
+p.auteur{font-style : italic ;color : black ;margin-left : 400px}
+
+p.citation{font-style :   ;text-decoration : underline ;margin-left : 400px}
+
+div.photo{float: right ; margin-top : -375px ; margin-right : 400px ;}

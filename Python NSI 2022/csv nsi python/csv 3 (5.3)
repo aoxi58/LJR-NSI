@@ -1,0 +1,6 @@
+import csv
+liste = [['CMOI', 'Arthur', 15, 16, 11]]
+
+with open ('exemple_5.csv', 'a', encoding='UTF-8') as f:
+    f_csv = csv.writer(f, delimiter = ';')
+    f_csv.writerows(liste)

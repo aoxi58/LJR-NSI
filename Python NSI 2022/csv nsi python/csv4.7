@@ -1,0 +1,22 @@
+import csv
+liste = [{'nom', 'prénom', 'NSI', 'Physique', 'Maths'},
+            {'Baron', 'Paul', 18, 16, 15},
+            {'Tallant', 'Greg', 10, 13, 9},
+            {'Goury', 'Zoé', 13, 14, 11},
+            {'Cmoi','Arthur',15,16,11}]
+
+with open ('exemple_testmoyenne.csv', 'w', encoding='UTF-8') as f:
+    f_csv = csv.writer(f, delimiter = ';')
+    f_csv.writerows(liste)
+    
+    
+fichier = open('exemple_testmoyenne.csv', 'r', encoding = 'UTF-8')
+lecteur = csv.DictReader(fichier,delimiter = ';')
+tableau= []
+for ligne in lecteur:
+    tableau.append(dict(ligne))
+
+print(tableau, '\n')
+
+print(liste[2])
+#print(ligne['prénom'])

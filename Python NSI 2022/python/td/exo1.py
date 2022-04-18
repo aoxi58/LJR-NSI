@@ -1,0 +1,11 @@
+jours_1=('lundi', 'mardi','mercredi','jeudi','vendredi')
+jours_2=('samedi','dimanche')
+#print('samedi' in jours_1)
+#print(len(jours_2))
+#print(jours_1 is jours_2)
+#print(jours_1[1])
+#print(jours_1[1]+jours_1[2]+jours_1[3])
+print(jours_2.index('dimanche'))
+#print(jours_2.count('samedi'))
+#semaine=jours_1 + jours_2
+#print(semaine)

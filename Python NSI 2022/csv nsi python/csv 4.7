@@ -1,0 +1,40 @@
+import csv
+moytab=[{'nom':'Baron', 'prénom':'Paul', 'NSI':18, 'Physique':16,'Maths': 15},
+        {'nom':'Tallant', 'prénom':'Greg','NSI': 10, 'Physique':13,'Maths': 9},
+        {'nom':'Goury', 'prénom':'Zoé', 'NSI':13,'Physique':14, 'Maths':11},
+        {'nom':'CMOI','prénom':'Arthur','NSI':15,'Physique':16,'Maths':11}]
+print(moytab)
+
+
+def foncmoy (tab):
+    for ligne in tab:
+        if  ligne['nom']=='Baron':
+           moyBaron= (ligne['NSI']+ligne['Physique']+ligne['Maths'])/3
+        elif  ligne['nom']=='Tallant':
+           moyTallant= (ligne['NSI']+ligne['Physique']+ligne['Maths'])/3
+        elif  ligne['nom']=='Goury':
+           moyGoury= (ligne['NSI']+ligne['Physique']+ligne['Maths'])/3
+        elif  ligne['nom']=='CMOI':
+           moyCMOI= (ligne['NSI']+ligne['Physique']+ligne['Maths'])/3
+    
+    
+    return [moyBaron,moyTallant,moyGoury,moyCMOI]
+
+L=foncmoy(moytab)
+print(foncmoy(moytab))
+
+
+moy=[{'nom':'Baron', 'prénom':'Paul','cle':L[0]},
+        {'nom':'Tallant', 'prénom':'Greg','cle':L[1]},
+        {'nom':'Goury', 'prénom':'Zoé', 'cle':L[2]},
+        {'nom':'CMOI','prénom':'Arthur','cle':L[3]}]
+print (moy)
+
+
+
+headers = moy[0].keys()
+with open('exemple_moytab.csv', 'w', encoding = 'UTF-8', newline='')as f:
+    f_csv = csv.DictWriter(f,headers, delimiter = ';')
+    f_csv.writeheader()
+    f_csv.writerows(moy)
+

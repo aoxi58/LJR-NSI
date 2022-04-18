@@ -1,0 +1,14 @@
+table=[{'nom':'Baron', 'prénom':'Paul', 'NSI':'18', 'Physique':'16','Maths': '15'},
+        {'nom':'Tallant', 'prénom':'Greg','NSI': '10', 'Physique':'13','Maths': '9'},
+        {'nom':'Goury', 'prénom':'Zoé', 'NSI':'13','Physique':'14', 'Maths':'11'},
+        {'nom':'CMOI','prénom':'Arthur','NSI':'15','Physique':'16','Maths':'11'}]
+
+def math(ligne):
+    return ligne['Maths']
+for i in table:
+    a= i["Maths"]
+    i["Maths"]=int(a)
+    
+tri_nom = sorted(table, key = math, reverse = True)
+print(tri_nom)
+
